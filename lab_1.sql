@@ -1,3 +1,4 @@
--- завдання 5 
+-- завдання 5
+--  Показати країни студентів. Назви країн мають бути унікальними.
 
-SELECT student_name FROM Student_Grades;
+SELECT DISTINCT country FROM Student_Grades
