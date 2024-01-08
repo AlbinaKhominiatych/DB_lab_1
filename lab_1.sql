@@ -1,2 +1,2 @@
--- завдання 1
-CREATE DATABASE Sample;
+-- завдання 2
+ALTER DATABASE Sample RENAME TO Example;
