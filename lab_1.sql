@@ -1,4 +1,5 @@
 -- завдання 5
---  Показати країни студентів. Назви країн мають бути унікальними.
+--  Показати назви усіх предметів із мінімальними середніми оцінками. Назви предметів мають бути унікальними.
 
-SELECT DISTINCT country FROM Student_Grades
+SELECT DISTINCT min_subject_name FROM Student_Grades
+WHERE average_grade_per_year = (SELECT MIN(average_grade_per_year)FROM Student_Grades)
